@@ -105,7 +105,7 @@
 <a href="https://github.com/apache/apex-core/">https://github.com/apache/apex-core/</a>  </li>
 <li>Clone the <strong>fork</strong> on your local workspace (one time step):<br><code>git clone https://github.com/{github_username}/apex-core.git</code></li>
 <li>Add <a href="https://github.com/apache/apex-core">apex core</a> as a remote repository (one time step):<br><code>git remote add upstream https://github.com/apache/apex-core</code></li>
-<li>Ensure that your git user name and email are <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup#Your-Identity">configured</a>, this will make it much easier to keep track of contributors.</li>
+<li>Ensure that your git user name and email are <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup#Your-Identity">configured</a>, this will make it much easier to keep track of contributors (one time step).</li>
 <li>Create a new branch from the <a href="https://github.com/apache/apex-core/tree/master">master</a> branch. <strong>Name your branch with the JIRA number in it, e.g. <code>APEXCORE-123.my-feature</code>.</strong><br><code>git checkout -b APEXCORE-123.my-feature -t upstream/master</code><br>Creating a local branch that tracks a remote makes pull easier (no need to specify the remote branch while pulling). A branch can be made to track a remote branch anytime, not necessarily at its creation by:<br><code>git branch -u upstream/master</code></li>
 <li>When adding new files, please include the Apache v2.0 license header.<ul>
 <li>From the top level directory, run <code>mvn license:check -Dlicense.skip=false</code> to check correct header formatting.</li>
